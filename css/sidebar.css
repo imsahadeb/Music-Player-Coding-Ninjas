@@ -1,0 +1,161 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex: 0.2;
+  background-color: #040404;
+  color: white;
+  min-width: 230px;
+}
+
+.sidebar > hr {
+  border: 1px solid #282828;
+  width: 90%;
+  margin: 3px auto;
+}
+
+.sidebar__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sidebar__logo img {
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+}
+.logo_title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: antiquewhite;
+}
+
+.sidebar_option {
+  align-items: center;
+  color: gray;
+  height: 40px;
+  cursor: pointer;
+  transition: 200ms color ease-in;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+.sidebar_option:hover * {
+  color: white;
+}
+.sidebar_option > a {
+  text-decoration: none;
+  color: gray;
+}
+
+.sidebar_playlist {
+  margin-left: 10px;
+  font-size: 0.8rem;
+  color: rgb(168, 158, 158);
+}
+
+#playlist::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* width */
+#playlist::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+#playlist::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+#playlist::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+#playlist::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#playlist {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+#playlist > a {
+  text-decoration: none;
+  color: white;
+}
+.song_list {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.song_list:hover {
+  background-color: #282828;
+}
+.center {
+  opacity: 0;
+}
+
+.left_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right_list {
+  padding: 3%;
+}
+.position {
+  font-weight: bold;
+}
+.sidebar_play_icon {
+  position: relative;
+  left: -15px;
+  opacity: 0;
+}
+
+.song_list:hover .sidebar_play_icon {
+  opacity: 1;
+  transition: ease-in 0.2s;
+}
+
+.song_list:hover .position {
+  opacity: 0;
+}
+
+.song_icon {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+.song_icon img {
+  height: 50px;
+  width: 50px;
+}
+
+.song_details {
+  margin-left: 10px;
+}
+.song_name {
+  display: block;
+  font-size: 1rem;
+}
+.artist_name {
+  display: block;
+  font-size: 0.9rem;
+  color: rgb(138, 134, 128);
+}
+.heart_logo {
+  margin-right: 2px;
+  opacity: 0.5;
+}
+
+.heart_logo:hover {
+  color: green;
+  opacity: 1;
+}

@@ -1,0 +1,79 @@
+@media only screen and (max-width: 1400px) {
+  #box_album div:nth-child(6) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  #box_album div:nth-child(5) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #box_album div:nth-child(4) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  #box_album div:nth-child(3) {
+    display: none;
+  }
+
+  #footer_left {
+  }
+
+  #footer_center {
+  }
+
+  #footer_right {
+    flex: 0.8;
+  }
+  #footer_right div:nth-child(1) {
+    display: none;
+  }
+  #footer_right div:nth-child(2) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 648px) {
+  #footer_right {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  #main-body {
+    flex: 1;
+  }
+  #box_album div:nth-child(3) {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  #box_album div:nth-child(3) {
+    display: none;
+  }
+  .songs_list_center span:nth-child(1) {
+    display: none;
+  }
+  .songs_list_left {
+    flex: 0.5;
+  }
+  .songs_list_right {
+    flex: 0.5;
+  }
+
+  .section_center span:nth-child(1) {
+    display: none;
+  }
+  .section_left {
+    flex: 0.5;
+  }
+  .section_right {
+    flex: 0.5;
+  }
+}

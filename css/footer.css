@@ -1,0 +1,120 @@
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  height: 50px;
+  width: 98%;
+  padding: 20px;
+  background-color: #181818;
+}
+
+.footer_left {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  color: white;
+  min-width: 170px;
+}
+.footer_albumLogo {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+#footer_center {
+  flex: 0.4;
+  padding: 0 100px;
+  color: white;
+
+  max-width: 300px;
+}
+#song_control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 170px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.green {
+  color: #1ed15e;
+}
+
+.footer__songInfo > h4 {
+  margin-bottom: 5px;
+}
+
+.footer__songInfo > p {
+  font-size: 12px;
+}
+
+/* this is the song-duration slider */
+#slider {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+/* ////////// */
+.time {
+  margin: 10px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+  width: 100%;
+}
+/* for audio and main center player */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+/* hover effect for the slider */
+.slider:hover {
+  opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+#footer_right {
+  flex: 0.3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.footer_icon {
+  font-size: 1.5rem;
+}
+
+.footer_icon:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
+}
